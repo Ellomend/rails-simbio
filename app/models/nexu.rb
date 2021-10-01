@@ -1,0 +1,2 @@
+class Nexu < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nexus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nexus.each do |nexu| %>
+      <tr>
+        <td><%= nexu.name %></td>
+        <td><%= link_to 'Show', nexu %></td>
+        <td><%= link_to 'Edit', edit_nexu_path(nexu) %></td>
+        <td><%= link_to 'Destroy', nexu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nexu', new_nexu_path %>

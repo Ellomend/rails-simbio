@@ -1,24 +1,30 @@
 # README
+add models
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Nexus
+  - name
 
-Things you may want to cover:
+- Program
+    - name
+- Goal
+    - name
+- Task
+    - name
+- Checklist
+  - name
+- Step
+    - name
+- Status
+  - name
+- Tag
+  - name
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails generate scaffold Nexus name:string
+rails generate scaffold Program name:string
+rails generate scaffold Goal name:string
+rails generate scaffold Task name:string
+rails generate scaffold Checklist name:string
+rails generate scaffold Step name:string
+rails generate scaffold Status name:string
+rails generate scaffold Tag name:string
