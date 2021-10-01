@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :books
+  resources :authors
   resources :tags
   resources :statuses
   resources :steps
